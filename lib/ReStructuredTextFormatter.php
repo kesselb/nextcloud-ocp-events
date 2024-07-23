@@ -22,7 +22,7 @@ class ReStructuredTextFormatter {
 
 			foreach ($event->sinceTags as $i => $sinceTag) {
 				if ($i === 0) {
-					$output .= '.. versionadded:: ' . $sinceTag['version'] . PHP_EOL;
+					$output .= '.. versionadded:: ' . $this->adjustVersion($sinceTag['version']) . PHP_EOL;
 					if (strlen($sinceTag['description']) > 0) {
 						$output .= '   ' . $sinceTag['description'] . PHP_EOL;
 					}
@@ -49,4 +49,8 @@ class ReStructuredTextFormatter {
 
 		return $output;
 	}
+
+    private function adjustVersion(string $version): string {
+        return preg_replace("/(\.0\.0|\.0)$/", '', $version);
+    }
 }

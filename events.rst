@@ -4,131 +4,131 @@
 ``OCP\Authentication\Events\AnyLoginFailedEvent``
 *************************************************
 
-.. versionadded:: 26.0.0
+.. versionadded:: 26
 
 Emitted when the authentication fails
 
 ``OCP\Authentication\Events\LoginFailedEvent``
 **********************************************
 
-.. versionadded:: 19.0.0
+.. versionadded:: 19
 
 Emitted when the authentication fails, but only if the login name can be associated with an existing user.
 
 ``OCP\Authentication\TwoFactorAuth\RegistryEvent``
 **************************************************
 
-.. versionadded:: 15.0.0
+.. versionadded:: 15
 
 
 ``OCP\Authentication\TwoFactorAuth\TwoFactorProviderDisabled``
 **************************************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Authentication\TwoFactorAuth\TwoFactorProviderChallengePassed``
 *********************************************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Authentication\TwoFactorAuth\TwoFactorProviderForUserEnabled``
 ********************************************************************
 
-.. versionadded:: 22.0.0
+.. versionadded:: 22
 
 
 ``OCP\Authentication\TwoFactorAuth\TwoFactorProviderForUserDisabled``
 *********************************************************************
 
-.. versionadded:: 22.0.0
+.. versionadded:: 22
 
 
 ``OCP\Authentication\TwoFactorAuth\TwoFactorProviderForUserRegistered``
 ***********************************************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Authentication\TwoFactorAuth\TwoFactorProviderUserDeleted``
 *****************************************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Authentication\TwoFactorAuth\TwoFactorProviderChallengeFailed``
 *********************************************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Authentication\TwoFactorAuth\TwoFactorProviderForUserUnregistered``
 *************************************************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Profile\BeforeTemplateRenderedEvent``
 *******************************************
 
-.. versionadded:: 25.0.0
+.. versionadded:: 25
 
 Emitted before the rendering step of the public profile page happens.
 
 ``OCP\Share\Events\ShareDeletedEvent``
 **************************************
 
-.. versionadded:: 21.0.0
+.. versionadded:: 21
 
 
 ``OCP\Share\Events\ShareDeletedFromSelfEvent``
 **********************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Share\Events\BeforeShareCreatedEvent``
 ********************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Share\Events\BeforeShareDeletedEvent``
 ********************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Share\Events\ShareCreatedEvent``
 **************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Share\Events\VerifyMountPointEvent``
 ******************************************
 
-.. versionadded:: 19.0.0
+.. versionadded:: 19
 
 
 ``OCP\Share\Events\ShareAcceptedEvent``
 ***************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\AppFramework\Http\Events\BeforeLoginTemplateRenderedEvent``
 *****************************************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 Emitted before the rendering step of the login TemplateResponse.
 
 ``OCP\AppFramework\Http\Events\BeforeTemplateRenderedEvent``
 ************************************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 Emitted before the rendering step of each TemplateResponse. The event holds a
 flag that specifies if an user is logged in.
@@ -136,7 +136,7 @@ flag that specifies if an user is logged in.
 ``OCP\FilesMetadata\Event\MetadataBackgroundEvent``
 ***************************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 MetadataBackgroundEvent is an event similar to MetadataLiveEvent but dispatched
 on a background thread instead of live thread. Meaning there is no limit to
@@ -145,7 +145,7 @@ the time required for the generation of your metadata.
 ``OCP\FilesMetadata\Event\MetadataNamedEvent``
 **********************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 MetadataNamedEvent is an event similar to MetadataBackgroundEvent completed with a target name,
 used to limit the refresh of metadata only listeners capable of filtering themselves out.
@@ -158,7 +158,7 @@ This event is mostly triggered when a registered name is added to the files scan
 ``OCP\FilesMetadata\Event\MetadataLiveEvent``
 *********************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 MetadataLiveEvent is an event initiated when a file is created or updated.
 The app contains the Node related to the created/updated file, and a FilesMetadata that already
@@ -170,44 +170,44 @@ the save of the metadata in the database.
 ``OCP\App\Events\AppUpdateEvent``
 *********************************
 
-.. versionadded:: 27.0.0
+.. versionadded:: 27
 
 
 ``OCP\App\Events\AppEnableEvent``
 *********************************
 
-.. versionadded:: 27.0.0
+.. versionadded:: 27
 
 
 ``OCP\App\Events\AppDisableEvent``
 **********************************
 
-.. versionadded:: 27.0.0
+.. versionadded:: 27
 
 
 ``OCP\App\ManagerEvent``
 ************************
 
-.. versionadded:: 9.0.0
+.. versionadded:: 9
 
 Class ManagerEvent
 
 ``OCP\TextToImage\Events\TaskFailedEvent``
 ******************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\TextToImage\Events\TaskSuccessfulEvent``
 **********************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Contacts\Events\ContactInteractedWithEvent``
 **************************************************
 
-.. versionadded:: 19.0.0
+.. versionadded:: 19
 
 An event that allows apps to notify other components about an interaction
 between two users. This can be used to build better recommendations and
@@ -218,81 +218,81 @@ of the recipient of the interaction.
 ``OCP\WorkflowEngine\Events\RegisterOperationsEvent``
 *****************************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\WorkflowEngine\Events\RegisterChecksEvent``
 *************************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\WorkflowEngine\Events\LoadSettingsScriptsEvent``
 ******************************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 Emitted when the workflow engine settings page is loaded.
 
 ``OCP\WorkflowEngine\Events\RegisterEntitiesEvent``
 ***************************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Federation\Events\TrustedServerRemovedEvent``
 ***************************************************
 
-.. versionadded:: 25.0.0
+.. versionadded:: 25
 
 
 ``OCP\SabrePluginEvent``
 ************************
 
-.. versionadded:: 8.2.0
+.. versionadded:: 8.2
 
 
 ``OCP\Mail\Events\BeforeMessageSent``
 *************************************
 
-.. versionadded:: 19.0.0
+.. versionadded:: 19
 
 Emitted before a system mail is sent. It can be used to alter the message.
 
 ``OCP\Settings\Events\DeclarativeSettingsRegisterFormEvent``
 ************************************************************
 
-.. versionadded:: 29.0.0
+.. versionadded:: 29
 
 
 ``OCP\Settings\Events\DeclarativeSettingsSetValueEvent``
 ********************************************************
 
-.. versionadded:: 29.0.0
+.. versionadded:: 29
 
 
 ``OCP\Settings\Events\DeclarativeSettingsGetValueEvent``
 ********************************************************
 
-.. versionadded:: 29.0.0
+.. versionadded:: 29
 
 
 ``OCP\Collaboration\AutoComplete\AutoCompleteFilterEvent``
 **********************************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Collaboration\AutoComplete\AutoCompleteEvent``
 ****************************************************
 
-.. versionadded:: 16.0.0
+.. versionadded:: 16
 
 
 ``OCP\Collaboration\Resources\LoadAdditionalScriptsEvent``
 **********************************************************
 
-.. versionadded:: 25.0.0
+.. versionadded:: 25
 
 This event is used by apps to register their own frontend scripts for integrating
 projects in their app. Apps also need to dispatch the event in order to load
@@ -301,7 +301,7 @@ scripts during page load
 ``OCP\Collaboration\Reference\RenderReferenceEvent``
 ****************************************************
 
-.. versionadded:: 25.0.0
+.. versionadded:: 25
 
 Event that apps can emit on their page rendering to trigger loading of aditional
 scripts for reference widget rendering
@@ -309,7 +309,7 @@ scripts for reference widget rendering
 ``OCP\Comments\CommentsEntityEvent``
 ************************************
 
-.. versionadded:: 9.1.0
+.. versionadded:: 9.1
 
 .. versionchanged:: 28.0.0
    Dispatched as a typed event
@@ -319,194 +319,194 @@ Class CommentsEntityEvent
 ``OCP\Comments\CommentsEvent``
 ******************************
 
-.. versionadded:: 9.0.0
+.. versionadded:: 9
 
 Class CommentsEvent
 
 ``OCP\Accounts\UserUpdatedEvent``
 *********************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Files\Cache\CacheEntryRemovedEvent``
 ******************************************
 
-.. versionadded:: 21.0.0
+.. versionadded:: 21
 
 Event for when an existing entry in the cache gets removed
 
 ``OCP\Files\Cache\CacheUpdateEvent``
 ************************************
 
-.. versionadded:: 16.0.0
+.. versionadded:: 16
 
 Event for when an existing entry in the cache gets updated
 
 ``OCP\Files\Cache\CacheEntryInsertedEvent``
 *******************************************
 
-.. versionadded:: 21.0.0
+.. versionadded:: 21
 
 Event for when an existing entry in the cache gets inserted
 
 ``OCP\Files\Cache\CacheEntryUpdatedEvent``
 ******************************************
 
-.. versionadded:: 21.0.0
+.. versionadded:: 21
 
 Event for when an existing entry in the cache gets updated
 
 ``OCP\Files\Cache\AbstractCacheEvent``
 **************************************
 
-.. versionadded:: 22.0.0
+.. versionadded:: 22
 
 
 ``OCP\Files\Cache\CacheInsertEvent``
 ************************************
 
-.. versionadded:: 16.0.0
+.. versionadded:: 16
 
 Event for when a new entry gets added to the cache
 
 ``OCP\Files\Events\NodeRemovedFromFavorite``
 ********************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Files\Events\FileScannedEvent``
 *************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Files\Events\FolderScannedEvent``
 ***************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Files\Events\NodeAddedToFavorite``
 ****************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\Files\Events\BeforeFileScannedEvent``
 *******************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Files\Events\Node\BeforeNodeCopiedEvent``
 ***********************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\Node\BeforeNodeTouchedEvent``
 ************************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\Node\BeforeNodeRenamedEvent``
 ************************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\Node\NodeDeletedEvent``
 ******************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\Node\BeforeNodeCreatedEvent``
 ************************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\Node\BeforeNodeReadEvent``
 *********************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\Node\NodeRenamedEvent``
 ******************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\Node\BeforeNodeDeletedEvent``
 ************************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\Node\NodeCopiedEvent``
 *****************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\Node\NodeCreatedEvent``
 ******************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\Node\FilesystemTornDownEvent``
 *************************************************
 
-.. versionadded:: 24.0.0
+.. versionadded:: 24
 
 Event fired after the filesystem has been torn down
 
 ``OCP\Files\Events\Node\NodeTouchedEvent``
 ******************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\Node\BeforeNodeWrittenEvent``
 ************************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\Node\NodeWrittenEvent``
 ******************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\Files\Events\FileCacheUpdated``
 *************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Files\Events\BeforeZipCreatedEvent``
 ******************************************
 
-.. versionadded:: 25.0.0
+.. versionadded:: 25
 
 
 ``OCP\Files\Events\NodeRemovedFromCache``
 *****************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Files\Events\BeforeDirectFileDownloadEvent``
 **************************************************
 
-.. versionadded:: 25.0.0
+.. versionadded:: 25
 
 This event is triggered when a user tries to download a file
 directly.
@@ -514,50 +514,50 @@ directly.
 ``OCP\Files\Events\BeforeFolderScannedEvent``
 *********************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Files\Events\InvalidateMountCacheEvent``
 **********************************************
 
-.. versionadded:: 24.0.0
+.. versionadded:: 24
 
 Used to notify the filesystem setup manager that the available mounts for a user have changed
 
 ``OCP\Files\Events\NodeAddedToCache``
 *************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Files\Template\FileCreatedFromTemplateEvent``
 ***************************************************
 
-.. versionadded:: 21.0.0
+.. versionadded:: 21
 
 
 ``OCP\Files\Template\RegisterTemplateCreatorEvent``
 ***************************************************
 
-.. versionadded:: 30.0.0
+.. versionadded:: 30
 
 
 ``OCP\Config\BeforePreferenceDeletedEvent``
 *******************************************
 
-.. versionadded:: 25.0.0
+.. versionadded:: 25
 
 
 ``OCP\Config\BeforePreferenceSetEvent``
 ***************************************
 
-.. versionadded:: 25.0.0
+.. versionadded:: 25
 
 
 ``OCP\DirectEditing\RegisterDirectEditorEvent``
 ***********************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 Event to allow to register the direct editor.
 
@@ -570,21 +570,21 @@ Event to allow to register the direct editor.
 ``OCP\SpeechToText\Events\TranscriptionSuccessfulEvent``
 ********************************************************
 
-.. versionadded:: 27.0.0
+.. versionadded:: 27
 
 This Event is emitted when a transcription of a media file happened successfully
 
 ``OCP\SpeechToText\Events\TranscriptionFailedEvent``
 ****************************************************
 
-.. versionadded:: 27.0.0
+.. versionadded:: 27
 
 This Event is emitted if a transcription of a media file using a Speech-To-Text provider failed
 
 ``OCP\Security\CSP\AddContentSecurityPolicyEvent``
 **************************************************
 
-.. versionadded:: 17.0.0
+.. versionadded:: 17
 
 Allows to inject something into the default content policy. This is for
 example useful when you're injecting Javascript code into a view belonging
@@ -599,186 +599,186 @@ that it is not possible to use the `disallowXYZ` functions.
 ``OCP\Security\Events\GenerateSecurePasswordEvent``
 ***************************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Security\Events\ValidatePasswordPolicyEvent``
 ***************************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Security\FeaturePolicy\AddFeaturePolicyEvent``
 ****************************************************
 
-.. versionadded:: 17.0.0
+.. versionadded:: 17
 
 Event that allows to register a feature policy header to a request.
 
 ``OCP\User\GetQuotaEvent``
 **************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 Event to allow apps to
 
 ``OCP\User\Events\UserChangedEvent``
 ************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\User\Events\UserLiveStatusEvent``
 ***************************************
 
-.. versionadded:: 20.0.0
+.. versionadded:: 20
 
 
 ``OCP\User\Events\BeforePasswordUpdatedEvent``
 **********************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 Emitted before the user password is updated.
 
 ``OCP\User\Events\UserDeletedEvent``
 ************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\User\Events\BeforeUserDeletedEvent``
 ******************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\User\Events\BeforeUserCreatedEvent``
 ******************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 Emitted before a new user is created on the back-end.
 
 ``OCP\User\Events\OutOfOfficeClearedEvent``
 *******************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 Emitted when a user's out-of-office period is cleared
 
 ``OCP\User\Events\BeforeUserLoggedInEvent``
 *******************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\User\Events\UserFirstTimeLoggedInEvent``
 **********************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 
 ``OCP\User\Events\UserCreatedEvent``
 ************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 Emitted when a new user has been created on the back-end.
 
 ``OCP\User\Events\UserLoggedInWithCookieEvent``
 ***********************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 Emitted when a user has been successfully logged in via remember-me cookies.
 
 ``OCP\User\Events\PasswordUpdatedEvent``
 ****************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 Emitted when the user password has been updated.
 
 ``OCP\User\Events\OutOfOfficeScheduledEvent``
 *********************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 Emitted when a user's out-of-office period is scheduled
 
 ``OCP\User\Events\PostLoginEvent``
 **********************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\User\Events\OutOfOfficeChangedEvent``
 *******************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 Emitted when a user's out-of-office period has changed
 
 ``OCP\User\Events\OutOfOfficeStartedEvent``
 *******************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 Emitted when a user's out-of-office period started
 
 ``OCP\User\Events\BeforeUserLoggedOutEvent``
 ********************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 Emitted before a user is logged out.
 
 ``OCP\User\Events\OutOfOfficeEndedEvent``
 *****************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 Emitted when a user's out-of-office period ended
 
 ``OCP\User\Events\UserLoggedOutEvent``
 **************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 Emitted when a user has been logged out successfully.
 
 ``OCP\User\Events\UserLoggedInEvent``
 *************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\User\Events\BeforeUserLoggedInWithCookieEvent``
 *****************************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 Emitted before a user is logged in via remember-me cookies.
 
 ``OCP\SystemTag\MapperEvent``
 *****************************
 
-.. versionadded:: 9.0.0
+.. versionadded:: 9
 
 Class MapperEvent
 
 ``OCP\SystemTag\ManagerEvent``
 ******************************
 
-.. versionadded:: 9.0.0
+.. versionadded:: 9
 
 Class ManagerEvent
 
 ``OCP\SystemTag\SystemTagsEntityEvent``
 ***************************************
 
-.. versionadded:: 9.1.0
+.. versionadded:: 9.1
 
 .. versionchanged:: 28.0.0
    Dispatched as a typed event
@@ -788,19 +788,19 @@ Class SystemTagsEntityEvent
 ``OCP\TaskProcessing\Events\TaskFailedEvent``
 *********************************************
 
-.. versionadded:: 30.0.0
+.. versionadded:: 30
 
 
 ``OCP\TaskProcessing\Events\TaskSuccessfulEvent``
 *************************************************
 
-.. versionadded:: 30.0.0
+.. versionadded:: 30
 
 
 ``OCP\EventDispatcher\GenericEvent``
 ************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 Class GenericEvent
 convenience reimplementation of \Symfony\Component\GenericEvent against
@@ -809,7 +809,7 @@ convenience reimplementation of \Symfony\Component\GenericEvent against
 ``OCP\BeforeSabrePubliclyLoadedEvent``
 **************************************
 
-.. versionadded:: 26.0.0
+.. versionadded:: 26
 
 Dispatched before Sabre is loaded when accessing public webdav endpoints
 This can be used to inject a Sabre plugin for example
@@ -817,28 +817,28 @@ This can be used to inject a Sabre plugin for example
 ``OCP\Console\ConsoleEvent``
 ****************************
 
-.. versionadded:: 9.0.0
+.. versionadded:: 9
 
 Class ConsoleEvent
 
 ``OCP\Log\BeforeMessageLoggedEvent``
 ************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 Even for when a log item is being logged
 
 ``OCP\Log\Audit\CriticalActionPerformedEvent``
 **********************************************
 
-.. versionadded:: 22.0.0
+.. versionadded:: 22
 
 Emitted when the admin_audit app should log an entry
 
 ``OCP\DB\Events\AddMissingIndicesEvent``
 ****************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 Event to allow apps to register information about missing database indices
 This event will be dispatched for checking on the admin settings and when running
@@ -847,7 +847,7 @@ occ db:add-missing-indices which will then create those indices
 ``OCP\DB\Events\AddMissingColumnsEvent``
 ****************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 Event to allow apps to register information about missing database columns
 This event will be dispatched for checking on the admin settings and when running
@@ -856,7 +856,7 @@ occ db:add-missing-columns which will then create those columns
 ``OCP\DB\Events\AddMissingPrimaryKeyEvent``
 *******************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 Event to allow apps to register information about missing database primary keys
 This event will be dispatched for checking on the admin settings and when running
@@ -865,79 +865,79 @@ occ db:add-missing-primary-keys which will then create those keys
 ``OCP\Group\Events\GroupCreatedEvent``
 **************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Group\Events\UserRemovedEvent``
 *************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Group\Events\SubAdminRemovedEvent``
 *****************************************
 
-.. versionadded:: 21.0.0
+.. versionadded:: 21
 
 
 ``OCP\Group\Events\BeforeGroupCreatedEvent``
 ********************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Group\Events\UserAddedEvent``
 ***********************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Group\Events\GroupDeletedEvent``
 **************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Group\Events\GroupChangedEvent``
 **************************************
 
-.. versionadded:: 26.0.0
+.. versionadded:: 26
 
 
 ``OCP\Group\Events\BeforeUserAddedEvent``
 *****************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Group\Events\BeforeUserRemovedEvent``
 *******************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\Group\Events\BeforeGroupChangedEvent``
 ********************************************
 
-.. versionadded:: 26.0.0
+.. versionadded:: 26
 
 
 ``OCP\Group\Events\SubAdminAddedEvent``
 ***************************************
 
-.. versionadded:: 21.0.0
+.. versionadded:: 21
 
 
 ``OCP\Group\Events\BeforeGroupDeletedEvent``
 ********************************************
 
-.. versionadded:: 18.0.0
+.. versionadded:: 18
 
 
 ``OCP\OCM\Events\ResourceTypeRegisterEvent``
 ********************************************
 
-.. versionadded:: 28.0.0
+.. versionadded:: 28
 
 Use this event to register additional OCM resources before the API returns
 them in the OCM provider list and capability
@@ -945,12 +945,12 @@ them in the OCM provider list and capability
 ``OCP\TextProcessing\Events\TaskFailedEvent``
 *********************************************
 
-.. versionadded:: 27.1.0
+.. versionadded:: 27.1
 
 
 ``OCP\TextProcessing\Events\TaskSuccessfulEvent``
 *************************************************
 
-.. versionadded:: 27.1.0
+.. versionadded:: 27.1
 
 
