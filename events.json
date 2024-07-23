@@ -1,0 +1,1572 @@
+[
+    {
+        "className": "OCP\\Authentication\\Events\\AnyLoginFailedEvent",
+        "summary": "Emitted when the authentication fails",
+        "description": "",
+        "since": [
+            {
+                "version": "26.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Authentication\\Events\\LoginFailedEvent",
+        "summary": "Emitted when the authentication fails, but only if the login name can be associated with an existing user.",
+        "description": "",
+        "since": [
+            {
+                "version": "19.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Authentication\\TwoFactorAuth\\RegistryEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "15.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Authentication\\TwoFactorAuth\\TwoFactorProviderDisabled",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Authentication\\TwoFactorAuth\\TwoFactorProviderChallengePassed",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Authentication\\TwoFactorAuth\\TwoFactorProviderForUserEnabled",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "22.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Authentication\\TwoFactorAuth\\TwoFactorProviderForUserDisabled",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "22.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Authentication\\TwoFactorAuth\\TwoFactorProviderForUserRegistered",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Authentication\\TwoFactorAuth\\TwoFactorProviderUserDeleted",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Authentication\\TwoFactorAuth\\TwoFactorProviderChallengeFailed",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Authentication\\TwoFactorAuth\\TwoFactorProviderForUserUnregistered",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Profile\\BeforeTemplateRenderedEvent",
+        "summary": "Emitted before the rendering step of the public profile page happens.",
+        "description": "",
+        "since": [
+            {
+                "version": "25.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Share\\Events\\ShareDeletedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "21.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Share\\Events\\ShareDeletedFromSelfEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Share\\Events\\BeforeShareCreatedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Share\\Events\\BeforeShareDeletedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Share\\Events\\ShareCreatedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Share\\Events\\VerifyMountPointEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "19.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Share\\Events\\ShareAcceptedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\AppFramework\\Http\\Events\\BeforeLoginTemplateRenderedEvent",
+        "summary": "Emitted before the rendering step of the login TemplateResponse.",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\AppFramework\\Http\\Events\\BeforeTemplateRenderedEvent",
+        "summary": "Emitted before the rendering step of each TemplateResponse. The event holds a\nflag that specifies if an user is logged in.",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\FilesMetadata\\Event\\MetadataBackgroundEvent",
+        "summary": "MetadataBackgroundEvent is an event similar to MetadataLiveEvent but dispatched\non a background thread instead of live thread. Meaning there is no limit to\nthe time required for the generation of your metadata.",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\FilesMetadata\\Event\\MetadataNamedEvent",
+        "summary": "MetadataNamedEvent is an event similar to MetadataBackgroundEvent completed with a target name,\nused to limit the refresh of metadata only listeners capable of filtering themselves out.",
+        "description": "Meaning that when using this event, your app must implement a filter on the event's registered\nname returned by getName()\n\nThis event is mostly triggered when a registered name is added to the files scan\n   i.e. .\/occ files:scan --generate-metadata [name]",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\FilesMetadata\\Event\\MetadataLiveEvent",
+        "summary": "MetadataLiveEvent is an event initiated when a file is created or updated.",
+        "description": "The app contains the Node related to the created\/updated file, and a FilesMetadata that already\ncontains the currently known metadata.\n\nSetting new metadata, or modifying already existing metadata with different value, will trigger\nthe save of the metadata in the database.",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\App\\Events\\AppUpdateEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "27.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\App\\Events\\AppEnableEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "27.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\App\\Events\\AppDisableEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "27.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\App\\ManagerEvent",
+        "summary": "Class ManagerEvent",
+        "description": "",
+        "since": [
+            {
+                "version": "9.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\TextToImage\\Events\\TaskFailedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\TextToImage\\Events\\TaskSuccessfulEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Contacts\\Events\\ContactInteractedWithEvent",
+        "summary": "An event that allows apps to notify other components about an interaction\nbetween two users. This can be used to build better recommendations and\nsuggestions in user interfaces.",
+        "description": "Emitters should add at least one identifier (uid, email, federated cloud ID)\nof the recipient of the interaction.",
+        "since": [
+            {
+                "version": "19.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\WorkflowEngine\\Events\\RegisterOperationsEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\WorkflowEngine\\Events\\RegisterChecksEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\WorkflowEngine\\Events\\LoadSettingsScriptsEvent",
+        "summary": "Emitted when the workflow engine settings page is loaded.",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\WorkflowEngine\\Events\\RegisterEntitiesEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Federation\\Events\\TrustedServerRemovedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "25.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\SabrePluginEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "8.2.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Mail\\Events\\BeforeMessageSent",
+        "summary": "Emitted before a system mail is sent. It can be used to alter the message.",
+        "description": "",
+        "since": [
+            {
+                "version": "19.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Settings\\Events\\DeclarativeSettingsRegisterFormEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "29.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Settings\\Events\\DeclarativeSettingsSetValueEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "29.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Settings\\Events\\DeclarativeSettingsGetValueEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "29.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Collaboration\\AutoComplete\\AutoCompleteFilterEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Collaboration\\AutoComplete\\AutoCompleteEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "16.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Collaboration\\Resources\\LoadAdditionalScriptsEvent",
+        "summary": "This event is used by apps to register their own frontend scripts for integrating\nprojects in their app. Apps also need to dispatch the event in order to load\nscripts during page load",
+        "description": "",
+        "since": [
+            {
+                "version": "25.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Collaboration\\Reference\\RenderReferenceEvent",
+        "summary": "Event that apps can emit on their page rendering to trigger loading of aditional\nscripts for reference widget rendering",
+        "description": "",
+        "since": [
+            {
+                "version": "25.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Comments\\CommentsEntityEvent",
+        "summary": "Class CommentsEntityEvent",
+        "description": "",
+        "since": [
+            {
+                "version": "9.1.0",
+                "description": ""
+            },
+            {
+                "version": "28.0.0",
+                "description": "Dispatched as a typed event"
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Comments\\CommentsEvent",
+        "summary": "Class CommentsEvent",
+        "description": "",
+        "since": [
+            {
+                "version": "9.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Accounts\\UserUpdatedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Cache\\CacheEntryRemovedEvent",
+        "summary": "Event for when an existing entry in the cache gets removed",
+        "description": "",
+        "since": [
+            {
+                "version": "21.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Cache\\CacheUpdateEvent",
+        "summary": "Event for when an existing entry in the cache gets updated",
+        "description": "",
+        "since": [
+            {
+                "version": "16.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Cache\\CacheEntryInsertedEvent",
+        "summary": "Event for when an existing entry in the cache gets inserted",
+        "description": "",
+        "since": [
+            {
+                "version": "21.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Cache\\CacheEntryUpdatedEvent",
+        "summary": "Event for when an existing entry in the cache gets updated",
+        "description": "",
+        "since": [
+            {
+                "version": "21.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Cache\\AbstractCacheEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "22.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Cache\\CacheInsertEvent",
+        "summary": "Event for when a new entry gets added to the cache",
+        "description": "",
+        "since": [
+            {
+                "version": "16.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\NodeRemovedFromFavorite",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\FileScannedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\FolderScannedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\NodeAddedToFavorite",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\BeforeFileScannedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\BeforeNodeCopiedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\BeforeNodeTouchedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\BeforeNodeRenamedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\NodeDeletedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\BeforeNodeCreatedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\BeforeNodeReadEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\NodeRenamedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\BeforeNodeDeletedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\NodeCopiedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\NodeCreatedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\FilesystemTornDownEvent",
+        "summary": "Event fired after the filesystem has been torn down",
+        "description": "",
+        "since": [
+            {
+                "version": "24.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\NodeTouchedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\BeforeNodeWrittenEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\Node\\NodeWrittenEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\FileCacheUpdated",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\BeforeZipCreatedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "25.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\NodeRemovedFromCache",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\BeforeDirectFileDownloadEvent",
+        "summary": "This event is triggered when a user tries to download a file\ndirectly.",
+        "description": "",
+        "since": [
+            {
+                "version": "25.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\BeforeFolderScannedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\InvalidateMountCacheEvent",
+        "summary": "Used to notify the filesystem setup manager that the available mounts for a user have changed",
+        "description": "",
+        "since": [
+            {
+                "version": "24.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\NodeAddedToCache",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Template\\FileCreatedFromTemplateEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "21.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Template\\RegisterTemplateCreatorEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "30.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Config\\BeforePreferenceDeletedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "25.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Config\\BeforePreferenceSetEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "25.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\DirectEditing\\RegisterDirectEditorEvent",
+        "summary": "Event to allow to register the direct editor.",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Preview\\BeforePreviewFetchedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "25.0.1",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\SpeechToText\\Events\\TranscriptionSuccessfulEvent",
+        "summary": "This Event is emitted when a transcription of a media file happened successfully",
+        "description": "",
+        "since": [
+            {
+                "version": "27.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\SpeechToText\\Events\\TranscriptionFailedEvent",
+        "summary": "This Event is emitted if a transcription of a media file using a Speech-To-Text provider failed",
+        "description": "",
+        "since": [
+            {
+                "version": "27.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Security\\CSP\\AddContentSecurityPolicyEvent",
+        "summary": "Allows to inject something into the default content policy. This is for\nexample useful when you're injecting Javascript code into a view belonging\nto another controller and cannot modify its Content-Security-Policy itself.",
+        "description": "Note that the adjustment is only applied to applications that use AppFramework\ncontrollers.\n\nWARNING: Using this API incorrectly may make the instance more insecure.\nDo think twice before adding whitelisting resources. Please do also note\nthat it is not possible to use the `disallowXYZ` functions.",
+        "since": [
+            {
+                "version": "17.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Security\\Events\\GenerateSecurePasswordEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Security\\Events\\ValidatePasswordPolicyEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Security\\FeaturePolicy\\AddFeaturePolicyEvent",
+        "summary": "Event that allows to register a feature policy header to a request.",
+        "description": "",
+        "since": [
+            {
+                "version": "17.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\GetQuotaEvent",
+        "summary": "Event to allow apps to",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\UserChangedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\UserLiveStatusEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "20.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\BeforePasswordUpdatedEvent",
+        "summary": "Emitted before the user password is updated.",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\UserDeletedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\BeforeUserDeletedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\BeforeUserCreatedEvent",
+        "summary": "Emitted before a new user is created on the back-end.",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\OutOfOfficeClearedEvent",
+        "summary": "Emitted when a user's out-of-office period is cleared",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\BeforeUserLoggedInEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\UserFirstTimeLoggedInEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\UserCreatedEvent",
+        "summary": "Emitted when a new user has been created on the back-end.",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\UserLoggedInWithCookieEvent",
+        "summary": "Emitted when a user has been successfully logged in via remember-me cookies.",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\PasswordUpdatedEvent",
+        "summary": "Emitted when the user password has been updated.",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\OutOfOfficeScheduledEvent",
+        "summary": "Emitted when a user's out-of-office period is scheduled",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\PostLoginEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\OutOfOfficeChangedEvent",
+        "summary": "Emitted when a user's out-of-office period has changed",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\OutOfOfficeStartedEvent",
+        "summary": "Emitted when a user's out-of-office period started",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\BeforeUserLoggedOutEvent",
+        "summary": "Emitted before a user is logged out.",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\OutOfOfficeEndedEvent",
+        "summary": "Emitted when a user's out-of-office period ended",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\UserLoggedOutEvent",
+        "summary": "Emitted when a user has been logged out successfully.",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\UserLoggedInEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\BeforeUserLoggedInWithCookieEvent",
+        "summary": "Emitted before a user is logged in via remember-me cookies.",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\SystemTag\\MapperEvent",
+        "summary": "Class MapperEvent",
+        "description": "",
+        "since": [
+            {
+                "version": "9.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\SystemTag\\ManagerEvent",
+        "summary": "Class ManagerEvent",
+        "description": "",
+        "since": [
+            {
+                "version": "9.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\SystemTag\\SystemTagsEntityEvent",
+        "summary": "Class SystemTagsEntityEvent",
+        "description": "",
+        "since": [
+            {
+                "version": "9.1.0",
+                "description": ""
+            },
+            {
+                "version": "28.0.0",
+                "description": "Dispatched as a typed event"
+            }
+        ]
+    },
+    {
+        "className": "OCP\\TaskProcessing\\Events\\TaskFailedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "30.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\TaskProcessing\\Events\\TaskSuccessfulEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "30.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\EventDispatcher\\GenericEvent",
+        "summary": "Class GenericEvent",
+        "description": "convenience reimplementation of \\Symfony\\Component\\GenericEvent against\n\\OCP\\EventDispatcher\\Event",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\BeforeSabrePubliclyLoadedEvent",
+        "summary": "Dispatched before Sabre is loaded when accessing public webdav endpoints\nThis can be used to inject a Sabre plugin for example",
+        "description": "",
+        "since": [
+            {
+                "version": "26.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Console\\ConsoleEvent",
+        "summary": "Class ConsoleEvent",
+        "description": "",
+        "since": [
+            {
+                "version": "9.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Log\\BeforeMessageLoggedEvent",
+        "summary": "Even for when a log item is being logged",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Log\\Audit\\CriticalActionPerformedEvent",
+        "summary": "Emitted when the admin_audit app should log an entry",
+        "description": "",
+        "since": [
+            {
+                "version": "22.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\DB\\Events\\AddMissingIndicesEvent",
+        "summary": "Event to allow apps to register information about missing database indices",
+        "description": "This event will be dispatched for checking on the admin settings and when running\nocc db:add-missing-indices which will then create those indices",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\DB\\Events\\AddMissingColumnsEvent",
+        "summary": "Event to allow apps to register information about missing database columns",
+        "description": "This event will be dispatched for checking on the admin settings and when running\nocc db:add-missing-columns which will then create those columns",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\DB\\Events\\AddMissingPrimaryKeyEvent",
+        "summary": "Event to allow apps to register information about missing database primary keys",
+        "description": "This event will be dispatched for checking on the admin settings and when running\nocc db:add-missing-primary-keys which will then create those keys",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Group\\Events\\GroupCreatedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Group\\Events\\UserRemovedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Group\\Events\\SubAdminRemovedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "21.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Group\\Events\\BeforeGroupCreatedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Group\\Events\\UserAddedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Group\\Events\\GroupDeletedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Group\\Events\\GroupChangedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "26.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Group\\Events\\BeforeUserAddedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Group\\Events\\BeforeUserRemovedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Group\\Events\\BeforeGroupChangedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "26.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Group\\Events\\SubAdminAddedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "21.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Group\\Events\\BeforeGroupDeletedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\OCM\\Events\\ResourceTypeRegisterEvent",
+        "summary": "Use this event to register additional OCM resources before the API returns\nthem in the OCM provider list and capability",
+        "description": "",
+        "since": [
+            {
+                "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\TextProcessing\\Events\\TaskFailedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "27.1.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\TextProcessing\\Events\\TaskSuccessfulEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "27.1.0",
+                "description": ""
+            }
+        ]
+    }
+]
