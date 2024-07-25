@@ -172,18 +172,21 @@ the save of the metadata in the database.
 
 .. versionadded:: 27
 
+This event is triggered when an app is updated.
 
 ``OCP\App\Events\AppEnableEvent``
 *********************************
 
 .. versionadded:: 27
 
+This event is triggered when an app is enabled.
 
 ``OCP\App\Events\AppDisableEvent``
 **********************************
 
 .. versionadded:: 27
 
+This event is triggered when an app is disabled.
 
 ``OCP\App\ManagerEvent``
 ************************
@@ -303,8 +306,9 @@ scripts during page load
 
 .. versionadded:: 25
 
-Event that apps can emit on their page rendering to trigger loading of aditional
-scripts for reference widget rendering
+Event emitted when apps might render references like link previews or smart picker widgets.
+This can be used to inject scripts for extending that.
+Further details can be found in the :ref:`Reference providers` deep dive.
 
 ``OCP\Comments\CommentsEntityEvent``
 ************************************
@@ -328,6 +332,7 @@ Class CommentsEvent
 
 .. versionadded:: 28
 
+This event is triggered when the account data of a user was updated.
 
 ``OCP\Files\Cache\CacheEntryRemovedEvent``
 ******************************************
@@ -566,6 +571,11 @@ Event to allow to register the direct editor.
 
 .. versionadded:: 25.0.1
 
+.. versionchanged:: 28.0.0
+   the constructor arguments ``$width``, ``$height``, ``$crop`` and ``$mode`` are no longer nullable.
+
+Emitted before a file preview is being fetched.
+It can be used to block preview rendering by throwing a ``OCP\Files\NotFoundException``
 
 ``OCP\SpeechToText\Events\TranscriptionSuccessfulEvent``
 ********************************************************

@@ -211,12 +211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nextcloud-deps/ocp.git",
-                "reference": "05a6b2a44325a21ba9aacb0bc0990775f0996867"
+                "reference": "00bd79aeae4bc02eb7217eb88d01c5d13c4c2fc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nextcloud-deps/ocp/zipball/05a6b2a44325a21ba9aacb0bc0990775f0996867",
-                "reference": "05a6b2a44325a21ba9aacb0bc0990775f0996867",
+                "url": "https://api.github.com/repos/nextcloud-deps/ocp/zipball/00bd79aeae4bc02eb7217eb88d01c5d13c4c2fc8",
+                "reference": "00bd79aeae4bc02eb7217eb88d01c5d13c4c2fc8",
                 "shasum": ""
             },
             "require": {
@@ -248,7 +248,7 @@
                 "issues": "https://github.com/nextcloud-deps/ocp/issues",
                 "source": "https://github.com/nextcloud-deps/ocp/tree/master"
             },
-            "time": "2024-07-23T00:37:43+00:00"
+            "time": "2024-07-25T00:37:32+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",

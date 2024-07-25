@@ -265,7 +265,7 @@
     },
     {
         "className": "OCP\\App\\Events\\AppUpdateEvent",
-        "summary": "",
+        "summary": "This event is triggered when an app is updated.",
         "description": "",
         "since": [
             {
@@ -276,7 +276,7 @@
     },
     {
         "className": "OCP\\App\\Events\\AppEnableEvent",
-        "summary": "",
+        "summary": "This event is triggered when an app is enabled.",
         "description": "",
         "since": [
             {
@@ -287,7 +287,7 @@
     },
     {
         "className": "OCP\\App\\Events\\AppDisableEvent",
-        "summary": "",
+        "summary": "This event is triggered when an app is disabled.",
         "description": "",
         "since": [
             {
@@ -485,8 +485,8 @@
     },
     {
         "className": "OCP\\Collaboration\\Reference\\RenderReferenceEvent",
-        "summary": "Event that apps can emit on their page rendering to trigger loading of aditional\nscripts for reference widget rendering",
-        "description": "",
+        "summary": "Event emitted when apps might render references like link previews or smart picker widgets.",
+        "description": "This can be used to inject scripts for extending that.\nFurther details can be found in the :ref:`Reference providers` deep dive.",
         "since": [
             {
                 "version": "25.0.0",
@@ -522,7 +522,7 @@
     },
     {
         "className": "OCP\\Accounts\\UserUpdatedEvent",
-        "summary": "",
+        "summary": "This event is triggered when the account data of a user was updated.",
         "description": "",
         "since": [
             {
@@ -940,12 +940,16 @@
     },
     {
         "className": "OCP\\Preview\\BeforePreviewFetchedEvent",
-        "summary": "",
-        "description": "",
+        "summary": "Emitted before a file preview is being fetched.",
+        "description": "It can be used to block preview rendering by throwing a ``OCP\\Files\\NotFoundException``",
         "since": [
             {
                 "version": "25.0.1",
                 "description": ""
+            },
+            {
+                "version": "28.0.0",
+                "description": "the constructor arguments ``$width``, ``$height``, ``$crop`` and ``$mode`` are no longer nullable."
             }
         ]
     },
