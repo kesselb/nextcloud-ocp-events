@@ -50,7 +50,7 @@ class ReStructuredTextFormatter {
 		return $output;
 	}
 
-    private function adjustVersion(string $version): string {
-        return preg_replace("/(\.0\.0|\.0)$/", '', $version);
-    }
+	private function adjustVersion(string $version): string {
+		return preg_replace("/(\.0\.0|\.0)$/", '', $version);
+	}
 }
