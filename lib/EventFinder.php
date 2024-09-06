@@ -97,6 +97,10 @@ class EventFinder {
 			);
 		}
 
+		usort($result, static function (EventClass $a, EventClass $b) {
+			return strcasecmp($a->className, $b->className);
+		});
+
 		return $result;
 	}
 }
