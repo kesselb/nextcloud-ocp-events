@@ -2,7 +2,7 @@
     "require": {
         "nette/robot-loader": "^4.0",
         "nextcloud/ocp": "dev-master",
-        "phpdocumentor/reflection-docblock": "^5.4"
+        "phpdocumentor/reflection-docblock": "^6.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.43",
