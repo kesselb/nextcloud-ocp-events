@@ -28,7 +28,9 @@ class EventFinder {
 		\OCP\Template::class,
 	];
 
-	public function __construct(private array $classes) {
+	public function __construct(
+		private array $classes,
+	) {
 
 	}
 
@@ -67,13 +69,7 @@ class EventFinder {
 				continue;
 			}
 
-			$docComment = $reflection->getDocComment();
-
-			if ($docComment === false) {
-				continue;
-			}
-
-			$docBlock = $docBlockFactory->create($docComment);
+			$docBlock = $docBlockFactory->create($reflection->getDocComment() ?: '/** */');
 
 			$sinceTags = array_map(function (\phpDocumentor\Reflection\DocBlock\Tags\Since $tag) {
 				$data = [
@@ -89,6 +85,10 @@ class EventFinder {
 				return $data;
 			}, $docBlock->getTagsByName('since'));
 
+			if ($sinceTags === []) {
+				$sinceTags = $this->sinceFromAttributes($reflection);
+			}
+
 			$result[] = new EventClass(
 				$reflection->getName(),
 				$docBlock->getSummary(),
@@ -102,5 +102,21 @@ class EventFinder {
 		});
 
 		return $result;
+	}
+
+	private function sinceFromAttributes(ReflectionClass $reflection): array {
+		$versions = [];
+		foreach ([\OCP\AppFramework\Attribute\Listenable::class, \OCP\AppFramework\Attribute\Dispatchable::class] as $attributeClass) {
+			foreach ($reflection->getAttributes($attributeClass) as $attribute) {
+				$versions[] = $attribute->newInstance()->getSince();
+			}
+		}
+
+		if ($versions === []) {
+			return [];
+		}
+
+		usort($versions, 'version_compare');
+		return [['version' => $versions[0], 'description' => '']];
 	}
 }
