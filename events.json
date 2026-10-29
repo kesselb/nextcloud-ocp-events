@@ -33,6 +33,17 @@
         ]
     },
     {
+        "className": "OCP\\App\\Events\\AppsLoadedEvent",
+        "summary": "This event is triggered when all enabled apps are loaded and available.",
+        "description": "So this can be used if your app needs to interact with other apps, which is not guaranteed to be available during the app bootstrapping phase.",
+        "since": [
+            {
+                "version": "35.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
         "className": "OCP\\App\\Events\\AppUpdateEvent",
         "summary": "This event is triggered when an app is updated.",
         "description": "",
@@ -94,6 +105,17 @@
         "since": [
             {
                 "version": "19.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Authentication\\Events\\TokenInvalidatedEvent",
+        "summary": "Emitted when an authentication token is invalidated",
+        "description": "",
+        "since": [
+            {
+                "version": "32.0.0",
                 "description": ""
             }
         ]
@@ -209,12 +231,67 @@
         ]
     },
     {
-        "className": "OCP\\Collaboration\\AutoComplete\\AutoCompleteEvent",
+        "className": "OCP\\Calendar\\Events\\CalendarObjectCreatedEvent",
         "summary": "",
         "description": "",
         "since": [
             {
-                "version": "16.0.0",
+                "version": "32.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Calendar\\Events\\CalendarObjectDeletedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "32.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Calendar\\Events\\CalendarObjectMovedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "32.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Calendar\\Events\\CalendarObjectMovedToTrashEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "32.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Calendar\\Events\\CalendarObjectRestoredEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "32.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Calendar\\Events\\CalendarObjectUpdatedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "32.0.0",
                 "description": ""
             }
         ]
@@ -274,6 +351,50 @@
         "since": [
             {
                 "version": "9.0.0",
+                "description": "In the future, once the deprecated methods are removed, this class will be abstract."
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Comments\\Events\\BeforeCommentUpdatedEvent",
+        "summary": "Class BeforeCommentAddedEvent",
+        "description": "",
+        "since": [
+            {
+                "version": "33.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Comments\\Events\\CommentAddedEvent",
+        "summary": "Class CommentAddedEvent",
+        "description": "",
+        "since": [
+            {
+                "version": "33.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Comments\\Events\\CommentDeletedEvent",
+        "summary": "Class CommentRemovedEvent",
+        "description": "",
+        "since": [
+            {
+                "version": "33.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Comments\\Events\\CommentUpdatedEvent",
+        "summary": "Class CommentUpdatedEvent",
+        "description": "",
+        "since": [
+            {
+                "version": "33.0.0",
                 "description": ""
             }
         ]
@@ -318,6 +439,17 @@
         "since": [
             {
                 "version": "19.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\ContextChat\\Events\\ContentProviderRegisterEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "32.0.0",
                 "description": ""
             }
         ]
@@ -369,7 +501,7 @@
     {
         "className": "OCP\\EventDispatcher\\GenericEvent",
         "summary": "Class GenericEvent",
-        "description": "convenience reimplementation of \\Symfony\\Component\\GenericEvent against\n\\OCP\\EventDispatcher\\Event",
+        "description": "convenience re-implementation of \\Symfony\\Component\\GenericEvent against\n\\OCP\\EventDispatcher\\Event",
         "since": [
             {
                 "version": "18.0.0",
@@ -400,6 +532,17 @@
         ]
     },
     {
+        "className": "OCP\\Files\\Cache\\CacheEntriesRemovedEvent",
+        "summary": "Meta-event wrapping multiple CacheEntryRemovedEvent for when an existing\nentry in the cache gets removed.",
+        "description": "",
+        "since": [
+            {
+                "version": "34.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
         "className": "OCP\\Files\\Cache\\CacheEntryInsertedEvent",
         "summary": "Event for when an existing entry in the cache gets inserted",
         "description": "",
@@ -413,7 +556,7 @@
     {
         "className": "OCP\\Files\\Cache\\CacheEntryRemovedEvent",
         "summary": "Event for when an existing entry in the cache gets removed",
-        "description": "",
+        "description": "Prefer using CacheEntriesRemovedEvent as it is more efficient when deleting\nmultiple files at the same time.",
         "since": [
             {
                 "version": "21.0.0",
@@ -433,23 +576,34 @@
         ]
     },
     {
-        "className": "OCP\\Files\\Cache\\CacheInsertEvent",
-        "summary": "Event for when a new entry gets added to the cache",
+        "className": "OCP\\Files\\Config\\Event\\UserMountAddedEvent",
+        "summary": "Event emitted when a user mount was added.",
         "description": "",
         "since": [
             {
-                "version": "16.0.0",
+                "version": "32.0.0",
                 "description": ""
             }
         ]
     },
     {
-        "className": "OCP\\Files\\Cache\\CacheUpdateEvent",
-        "summary": "Event for when an existing entry in the cache gets updated",
+        "className": "OCP\\Files\\Config\\Event\\UserMountRemovedEvent",
+        "summary": "Event emitted when a user mount was removed.",
         "description": "",
         "since": [
             {
-                "version": "16.0.0",
+                "version": "32.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Config\\Event\\UserMountUpdatedEvent",
+        "summary": "Event emitted when a user mount was moved.",
+        "description": "",
+        "since": [
+            {
+                "version": "32.0.0",
                 "description": ""
             }
         ]
@@ -477,6 +631,17 @@
         ]
     },
     {
+        "className": "OCP\\Files\\Events\\BeforeFileSystemSetupEvent",
+        "summary": "Event triggered before the file system is set up.",
+        "description": "",
+        "since": [
+            {
+                "version": "31.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
         "className": "OCP\\Files\\Events\\BeforeFolderScannedEvent",
         "summary": "",
         "description": "",
@@ -488,9 +653,20 @@
         ]
     },
     {
-        "className": "OCP\\Files\\Events\\BeforeZipCreatedEvent",
-        "summary": "",
+        "className": "OCP\\Files\\Events\\BeforeRemotePropfindEvent",
+        "summary": "This event is fired before a PROPFIND request is sent to remote WebDAV storage\nUsed to extend the list of properties to request additional data from the remote server",
         "description": "",
+        "since": [
+            {
+                "version": "33.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\BeforeZipCreatedEvent",
+        "summary": "This event is triggered before an archive is created when a user requested\ndownloading a folder or multiple files.",
+        "description": "By setting `successful` to false the tar creation can be aborted and the download denied.\n\nIf `allowsPartialArchive` returns true, listeners should only block the\narchive creation if access to the entire directory or all files is denied.\nSingle nodes can be excluded from the archive with `addNodeFilter`.\nListeners can always block the whole archive with `setSuccessful(false)`.",
         "since": [
             {
                 "version": "25.0.0",
@@ -664,6 +840,17 @@
         ]
     },
     {
+        "className": "OCP\\Files\\Events\\Node\\NodeOpenedEvent",
+        "summary": "A user opened a node in a client, as reported by that client.",
+        "description": "Unlike {@see \\BeforeNodeReadEvent}, this is not dispatched when the content\nis read (sync, previews, downloads) but only when a client says the user\nactually opened it.\n\nIt is meant for statistics only, like recommending the files a user works\nwith. Clients report it when they choose to, so it can be missing, repeated\nor sent for a node the user never looked at. Never use it for permissions,\naccess control, auditing, or anything else that has to be reliable.",
+        "since": [
+            {
+                "version": "36.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
         "className": "OCP\\Files\\Events\\Node\\NodeRenamedEvent",
         "summary": "",
         "description": "",
@@ -736,6 +923,28 @@
         "since": [
             {
                 "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\Events\\UserHomeSetupEvent",
+        "summary": "Event triggered after the users home mount has been setup, before any other\nmounts are setup.",
+        "description": "",
+        "since": [
+            {
+                "version": "34.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Files\\ObjectStore\\Events\\BucketCreatedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "33.0.0",
                 "description": ""
             }
         ]
@@ -939,6 +1148,28 @@
         ]
     },
     {
+        "className": "OCP\\Install\\Events\\InstallationCompletedEvent",
+        "summary": "Emitted when the Nextcloud installation has been completed successfully.",
+        "description": "This event is dispatched after:\n- The database has been configured and migrations have run\n- The admin user has been created (if applicable)\n- Default apps have been installed\n- Background jobs have been configured\n- The system has been marked as installed\n\nApps can listen to this event to perform additional actions after installation,\nsuch as:\n- Sending notification emails\n- Triggering external APIs\n- Initializing app-specific data\n- Setting up integrations",
+        "since": [
+            {
+                "version": "33.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Interaction\\RestrictInteractionEvent",
+        "summary": "This event can be emitted to check if a user is allowed to perform an action, such that the receivers would become aware of the resources.",
+        "description": "If the resources have a distinction between an owner and a initiator, the event must be emitted for each separately.\nEmitters may omit one or multiple properties, if they are not known.\nEmitters must call {@see \\isInteractionRestricted} instead of dispatching the event manually, to ensure exception handling and audit logging is done correctly.\nListeners may ignore any of the properties and only check the ones that are relevant to them.\nListeners must throw an {@see \\InteractionRestrictedException}, if they want to restrict the interaction.",
+        "since": [
+            {
+                "version": "34.0.2",
+                "description": ""
+            }
+        ]
+    },
+    {
         "className": "OCP\\Log\\Audit\\CriticalActionPerformedEvent",
         "summary": "Emitted when the admin_audit app should log an entry",
         "description": "",
@@ -972,6 +1203,50 @@
         ]
     },
     {
+        "className": "OCP\\Navigation\\Events\\LoadAdditionalEntriesEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "31.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\OCM\\Events\\LocalOCMDiscoveryEvent",
+        "summary": "Use this event to register additional resources before the API returns\nthem in the OCM provider list and capability",
+        "description": "",
+        "since": [
+            {
+                "version": "33.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\OCM\\Events\\OCMEndpointRequestEvent",
+        "summary": "Use this event to catch and manage incoming OCM request",
+        "description": "",
+        "since": [
+            {
+                "version": "33.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\OCM\\Events\\OCMNotificationReceivedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "35.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
         "className": "OCP\\OCM\\Events\\ResourceTypeRegisterEvent",
         "summary": "Use this event to register additional OCM resources before the API returns\nthem in the OCM provider list and capability",
         "description": "",
@@ -994,6 +1269,10 @@
             {
                 "version": "28.0.0",
                 "description": "the constructor arguments ``$width``, ``$height``, ``$crop`` and ``$mode`` are no longer nullable."
+            },
+            {
+                "version": "31.0.0",
+                "description": "the constructor arguments ``$mimeType`` was added"
             }
         ]
     },
@@ -1163,12 +1442,56 @@
         ]
     },
     {
+        "className": "OCP\\Share\\Events\\ShareMovedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "33.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Share\\Events\\ShareTransferredEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "33.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
         "className": "OCP\\Share\\Events\\VerifyMountPointEvent",
         "summary": "",
         "description": "",
         "since": [
             {
                 "version": "19.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Share\\ShareReview\\Events\\ShareReviewAccessCheckEvent",
+        "summary": "Authorization gate for deleting an app-managed share through a share-review app.",
+        "description": "Background: Apps such as Deck or Tables manage their own shares outside of\nthe regular sharing backend ({@see \\OCP\\Share\\IManager}). They can expose\nthose shares to a share-review app \u2014 a compliance tool that lets designated\noperators audit and revoke shares across all apps \u2014 by implementing\n{@see \\OCP\\Share\\ShareReview\\IShareReviewSource}. When a share-review\noperator requests the deletion of such a share, the deletion is executed by\nthe app that owns the share, not by the share-review app. The owning app\nhas no way of knowing whether the acting user is actually authorized to\nperform share reviews \u2014 only the share-review app knows that. This event\ncloses that gap: it lets the owning app ask \"may the current user delete\nthis share on behalf of a share review?\" before deleting anything.\n\nDispatched by: the app that owns the share, i.e. the\n{@see \\OCP\\Share\\ShareReview\\IShareReviewSource} implementation, at the\nbeginning of its deleteShare() method:\n\n  public function deleteShare(string $shareId): bool {\n      $event = new ShareReviewAccessCheckEvent('MyApp', $shareId);\n      $this->dispatcher->dispatchTyped($event);\n      if (!$event->isHandled() || !$event->isGranted()) {\n          return false; \/\/ default-deny: no listener means no access\n      }\n      \/\/ ... actually delete the share ...\n  }\n\nListened to by: the share-review app. Its listener decides whether the\ncurrent user is an authorized share-review operator (e.g. the app is\nenabled for the user) and answers with grantAccess() or denyAccess():\n\n  public function handle(Event $event): void {\n      if (!$event instanceof ShareReviewAccessCheckEvent) {\n          return;\n      }\n      if ($this->isShareReviewOperator()) {\n          $event->grantAccess();\n      } else {\n          $event->denyAccess('User is not a share-review operator.');\n      }\n  }\n\nApps that merely expose shares must not listen to this event; answering it\nis the responsibility of the share-review app that triggered the deletion.\n\nSemantics:\n - Default-deny: if no listener responds (isHandled() is false, e.g. no\n   share-review app is installed), the dispatcher must not delete the share.\n - Deny wins: once denyAccess() is called, further grantAccess() calls are\n   ignored and propagation is stopped immediately.\n - Multiple grants are harmless; the last listener to deny is authoritative.",
+        "since": [
+            {
+                "version": "34.0.2",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\Share\\ShareReview\\RegisterShareReviewSourceEvent",
+        "summary": "Event dispatched by a share-review app to collect share sources from other\napps. Listeners register the class name of their {@see IShareReviewSource}\nimplementation; the share-review app resolves it from the dependency\ninjection container.",
+        "description": "",
+        "since": [
+            {
+                "version": "34.0.2",
                 "description": ""
             }
         ]
@@ -1191,6 +1514,39 @@
         "since": [
             {
                 "version": "27.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\SystemTag\\Events\\TagCreatedEvent",
+        "summary": "Event triggered when creating a new tag.",
+        "description": "",
+        "since": [
+            {
+                "version": "35.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\SystemTag\\Events\\TagDeletedEvent",
+        "summary": "Event triggered when deleting a new tag.",
+        "description": "",
+        "since": [
+            {
+                "version": "35.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\SystemTag\\Events\\TagUpdatedEvent",
+        "summary": "Event triggered when updated a tag.",
+        "description": "",
+        "since": [
+            {
+                "version": "35.0.0",
                 "description": ""
             }
         ]
@@ -1229,6 +1585,39 @@
             {
                 "version": "28.0.0",
                 "description": "Dispatched as a typed event"
+            }
+        ]
+    },
+    {
+        "className": "OCP\\SystemTag\\TagAssignedEvent",
+        "summary": "Event class for when a system tag is assigned to an object",
+        "description": "",
+        "since": [
+            {
+                "version": "32.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\SystemTag\\TagUnassignedEvent",
+        "summary": "Event class for when a system tag is unassigned from an object",
+        "description": "",
+        "since": [
+            {
+                "version": "32.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\TaskProcessing\\Events\\GetTaskProcessingProvidersEvent",
+        "summary": "Event dispatched by the server to collect Task Processing Providers\nand custom Task Types from listeners (like AppAPI).",
+        "description": "Listeners should add their providers and task types using the\naddProvider() and addTaskType() methods.",
+        "since": [
+            {
+                "version": "32.0.0",
+                "description": ""
             }
         ]
     },
@@ -1327,6 +1716,17 @@
         "since": [
             {
                 "version": "18.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\BeforeUserIdUnassignedEvent",
+        "summary": "Emitted before removing the mapping between an external user and an internal userid",
+        "description": "",
+        "since": [
+            {
+                "version": "31.0.0",
                 "description": ""
             }
         ]
@@ -1453,6 +1853,17 @@
         ]
     },
     {
+        "className": "OCP\\User\\Events\\UserConfigChangedEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "33.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
         "className": "OCP\\User\\Events\\UserCreatedEvent",
         "summary": "Emitted when a new user has been created on the back-end.",
         "description": "",
@@ -1475,12 +1886,45 @@
         ]
     },
     {
+        "className": "OCP\\User\\Events\\UserEnumerationFilterEvent",
+        "summary": "",
+        "description": "",
+        "since": [
+            {
+                "version": "31.0.14",
+                "description": ""
+            }
+        ]
+    },
+    {
         "className": "OCP\\User\\Events\\UserFirstTimeLoggedInEvent",
         "summary": "",
         "description": "",
         "since": [
             {
                 "version": "28.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\UserIdAssignedEvent",
+        "summary": "Emitted by backends (like user_ldap) when a user created externally is mapped for the first time and assigned a userid",
+        "description": "",
+        "since": [
+            {
+                "version": "31.0.0",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "className": "OCP\\User\\Events\\UserIdUnassignedEvent",
+        "summary": "Emitted after removing the mapping between an external user and an internal userid",
+        "description": "",
+        "since": [
+            {
+                "version": "31.0.0",
                 "description": ""
             }
         ]
